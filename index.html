@@ -1,349 +1,326 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Rafsyah Fachri Isfansyah</title>
-
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23FFEB00'/></svg>" />
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 
     <style>
-      /* Menggunakan font Inter sebagai default */
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      /* Efek glow untuk teks kuning */
-      .text-glow {
-        text-shadow: 0 0 8px rgba(255, 235, 0, 0.4);
-      }
+        /* Menggunakan font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Efek glow untuk teks kuning */
+        .text-glow {
+            text-shadow: 0 0 8px rgba(255, 235, 0, 0.4);
+        }
     </style>
 
     <script>
-      // Konfigurasi custom color palette untuk Tailwind CSS
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "gelap-biru": "#000957",
-              "utama-biru": "#344CB7",
-              "terang-biru": "#577BC1",
-              "aksen-kuning": "#FFEB00",
-            },
-          },
-        },
-      };
+        // Konfigurasi custom color palette untuk Tailwind CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gelap-biru': '#000957',
+                        'utama-biru': '#344CB7',
+                        'terang-biru': '#577BC1',
+                        'aksen-kuning': '#FFEB00',
+                    }
+                }
+            }
+        }
     </script>
-  </head>
-  <body class="bg-gelap-biru text-white">
+</head>
+<body class="bg-gelap-biru text-white">
+
     <!-- ===== HEADER / NAVBAR ===== -->
     <header class="bg-gelap-biru/80 backdrop-blur-sm sticky top-0 z-50 border-b border-utama-biru/30">
-      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" class="text-2xl font-bold text-white"> Portofolio<span class="text-aksen-kuning">.</span> </a>
-        <nav class="hidden md:flex space-x-4">
-          <a href="#beranda" class="bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Home</a>
-          <a href="#portofolio" class="bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Portofolio</a>
-          <a href="#tentang" class="bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">About</a>
-          <a href="#kontak" class="bg-aksen-kuning hover:bg-yellow-400 text-gelap-biru font-semibold px-4 py-2 rounded-md transition-colors duration-300">Kontak</a>
-        </nav>
-        <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-        </button>
-      </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
-        <a href="#beranda" class="block text-center bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Beranda</a>
-        <a href="#portofolio" class="block text-center bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Portofolio</a>
-        <a href="#tentang" class="block text-center bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Tentang</a>
-        <a href="#kontak" class="block text-center bg-aksen-kuning hover:bg-yellow-400 text-gelap-biru font-semibold px-4 py-2 rounded-md transition-colors duration-300 mt-2">Kontak</a>
-      </div>
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                Portofolio<span class="text-aksen-kuning">.</span>
+            </a>
+            <nav class="hidden md:flex space-x-4">
+                <a href="#beranda" class="bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Home</a>
+                <a href="#portofolio" class="bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Portofolio</a>
+                <a href="#tentang" class="bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">About</a>
+                <a href="#kontak" class="bg-aksen-kuning hover:bg-yellow-400 text-gelap-biru font-semibold px-4 py-2 rounded-md transition-colors duration-300">Kontak</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#beranda" class="block text-center bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Beranda</a>
+            <a href="#portofolio" class="block text-center bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Portofolio</a>
+            <a href="#tentang" class="block text-center bg-utama-biru/50 hover:bg-utama-biru text-white px-4 py-2 rounded-md transition-colors duration-300">Tentang</a>
+            <a href="#kontak" class="block text-center bg-aksen-kuning hover:bg-yellow-400 text-gelap-biru font-semibold px-4 py-2 rounded-md transition-colors duration-300 mt-2">Kontak</a>
+        </div>
     </header>
 
     <main>
-      <!-- ===== HERO SECTION ===== -->
-      <section id="beranda" class="min-h-screen flex items-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 9, 87, 0.8), rgba(0, 9, 87, 1))">
-        <div class="container mx-auto px-6 text-center">
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-wider">Get To <span class="text-aksen-kuning text-glow">Know Me...</span></h1>
-          <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto" style="color: #cdcdcd">
-            Selamat datang di portofolio saya!! &#128075;&#128075;&#128075;<br />
-            Saya Rafsyah Fachri Isfansyah, seorang yang tertarik dalam dunia desain digital serta pengembangan aplikasi dan website <br />untuk menciptakan solusi yang fungsional.
-          </p>
-          <a href="#portofolio" class="mt-8 inline-block bg-aksen-kuning text-gelap-biru font-bold px-8 py-4 rounded-lg uppercase tracking-wider hover:scale-105 transform transition-transform duration-300"> Lihat Karya Saya </a>
-        </div>
-      </section>
-
-      <!-- Garis Pemisah -->
-      <hr class="border-t border-utama-biru/30" />
-
-      <!-- ===== PORTOFOLIO SECTION ===== -->
-      <section id="portofolio" class="py-20 bg-gelap-biru">
-        <div class="container mx-auto px-6">
-          <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Portofolio Karya Desain</h2>
-          <div class="w-24 h-1 bg-aksen-kuning mx-auto mb-12"></div>
-
-          <!-- Kategori: Aplikasi Mobile -->
-          <h3 class="text-2xl font-semibold text-terang-biru mb-8">Desain Aplikasi Mobile</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <!-- Proyek 1: Produk Jadi -->
-            <a
-              href="https://www.figma.com/proto/oeertPeZAUHAvsszrtBIuK/project-2-ar?page-id=0%3A1&node-id=1-1258&p=f&viewport=263%2C46%2C0.2&t=aoCAk6xrRC6vwHkY-1&scaling=scale-down&content-scaling=fixed"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block"
-            >
-              <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
-                <img src="https://i.postimg.cc/76HPSjQL/Ethno-Sync.png" alt="Ethno-Sync" class="rounded-md mb-4 w-full h-auto object-cover" />
-                <h4 class="text-xl font-bold text-white">Prototipe Aplikasi Mobile | EthnoSync</h4>
-                <p class="mt-2" style="color: #cdcdcd">EthnoSync merupakan aplikasi media yang dikhususkan untuk memperkenalkan budaya di Indonesia.</p>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Prototype</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4">Figma</span>
-              </div>
-            </a>
-            <!-- Proyek 2: Rancangan 1 -->
-            <a
-              href="https://www.figma.com/proto/kXM7fgJBqi5OmkNNlRrYp5/Untitled?page-id=2%3A35&node-id=123-11564&viewport=578%2C-712%2C0.25&t=AdnjTJIKeriSWCrt-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=123%3A11564"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block"
-            >
-              <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
-                <img src="https://i.postimg.cc/XJsjLxTk/LeafMind.png" alt="LeafMind" class="rounded-md mb-4 w-full h-auto object-cover" />
-                <h4 class="text-xl font-bold text-white">Rancangan Aplikasi Mobile | LeafMind</h4>
-                <p class="mt-2" style="color: #cdcdcd">Konsep desain dan prototipe untuk ide aplikasi timer pomodoro bertema dedaunan dan merupakan Final Project mata kuliah Rekayasa Kebutuhan Perangkat Lunak</p>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Konsep</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4">Figma</span>
-              </div>
-            </a>
-            <!-- Proyek 3: Rancangan 2 -->
-            <a
-              href="https://www.figma.com/proto/QJIZ45qsx1KROQ4BuFpK5C/PT-DT-K8?page-id=55%3A916&node-id=100-3502&viewport=642%2C294%2C0.25&t=qUUa0L6CvdG12OZG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=100%3A3502"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block"
-            >
-              <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
-                <img src="https://i.postimg.cc/W3Pz5Tsm/FPDesign-Thinking.png" alt="FP-Design-Thinking" class="rounded-md mb-4 w-full h-auto object-cover" />
-                <h4 class="text-xl font-bold text-white">Rancangan Aplikasi Mobile | untitled</h4>
-                <p class="mt-2" style="color: #cdcdcd">Konsep desain dan prototipe aplikasi untuk mencari project maupun tim lomba sesama mahasiswa.</p>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Konsep</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4">Figma</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- Kategori: Desain Grafis -->
-          <h3 class="text-2xl font-semibold text-terang-biru mb-8">Desain Grafis Visual</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <!-- Proyek 4: Character Rig -->
-            <a
-              href="https://www.canva.com/design/DAGsYxF-eI0/rp6ERQSrYZis7KI1GYLaoQ/edit?utm_content=DAGsYxF-eI0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block md:col-span-2"
-            >
-              <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
-                <img src="https://i.postimg.cc/GtNcwt3B/no-Fillrig2dbtr.png" alt="Desain karakter rig 2D" class="rounded-md mb-4 w-full h-auto object-cover" />
-                <h4 class="text-xl font-bold text-white">Desain Karakter 2D | Anime: Bocchi The Rock</h4>
-                <p class="mt-2" style="color: #cdcdcd">Pembuatan karakter 2D yang dapat digunakan sebagai model rigging animasi</p>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Ilustrasi</span>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Bocchi The Rock</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Canva</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <!-- Proyek 5: Character Rig -->
-            <a target="_blank" rel="noopener noreferrer" class="block md:col-span-2">
-              <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
-                <img src="https://i.postimg.cc/909W6ZkK/Cover-Buku.png" alt="Cover Buku Kumpulan Cerpen" class="rounded-md mb-4 w-full h-auto object-cover" />
-                <h4 class="text-xl font-bold text-white">Desain Cover Buku Kumpulan Cerpen | Pena Sorot</h4>
-                <p class="mt-2" style="color: #cdcdcd">Digunakan sebagai cover buku dari ujian praktik mata pelajaran Agama Islam SMAN 4 Surabaya. Buku tersebut berisi kumpulan cerita pendek karya Kelompok 5 - XII MIPA 5</p>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Ilustrasi</span>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Book</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Canva</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Ibis Paint</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- Kategori: Desain Media Sosial -->
-          <h3 class="text-2xl font-semibold text-terang-biru mb-8">Desain Media Sosial</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Proyek 5: Instagram Post 1 -->
-            <a href="https://www.instagram.com/kolasemipa5?igsh=c3pncDM5a2E2ZWVy" target="_blank" rel="noopener noreferrer" class="block">
-              <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
-                <img src="https://i.postimg.cc/vHgY7rX5/sample-Kolase-G.png" alt="Desain Grid kolasemipa5" class="rounded-md mb-4 w-full h-auto object-cover aspect-square" />
-                <h4 class="text-xl font-bold text-white">Desain Feed Instagram | @kolasemipa5</h4>
-                <p class="mt-2" style="color: #cdcdcd">Desain grid foto bersama Mipa 5 SMAN 4 Surabaya saat berkunjung ke Universitas Udayana</p>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Feed</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Instagram</span>
-              </div>
-            </a>
-            <!-- Proyek 6: Instagram Post 2 -->
-            <a href="https://drive.google.com/drive/folders/1AtcWpRNfgXKoug9eIkas57xRfyaGmDaI?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block">
-              <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
-                <img src="https://i.postimg.cc/YSfqGtRV/frame-Kolase.png" alt="Desain Postingan kolasemipa5" class="rounded-md mb-4 w-full h-auto object-cover aspect-square" />
-                <h4 class="text-xl font-bold text-white">Desain Konten Instagram | @kolasemipa5</h4>
-                <p class="mt-2" style="color: #cdcdcd">Digunakan sebagai cover dari konten-konten akun @kolasemipa5</p>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Post</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Instagram</span>
-              </div>
-            </a>
-          </div>
-
-          <!-- Kategori: Desain Media Sosial -->
-          <br />
-          <br />
-          <br />
-          <h3 class="text-2xl font-semibold text-terang-biru mb-8">Desain model 3D</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Proyek 5: Instagram Post 1 -->
-            <a href="https://drive.google.com/file/d/1JiwBG7piN7Ecb2OncUx7zgMUUi55Ni1Q/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="block">
-              <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
-                <img src="https://i.postimg.cc/XJbHBPdJ/LOGONYAITS.png" alt="Logo 3D ITS" class="rounded-md mb-4 w-full h-auto object-cover aspect-square" />
-                <h4 class="text-xl font-bold text-white">Logo ITS 3D</h4>
-                <p class="mt-2" style="color: #cdcdcd">Model Logo ITS 3D yang saya buat setelah mempelajari fitur dasar blender</p>
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Logo</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Blender</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== RECENT PROJECT SECTION (BARU) ===== -->
-      <section id="proyek-terbaru" class="py-20 bg-gelap-biru">
-        <div class="container mx-auto px-6">
-          <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Proyek Terbaru</h2>
-          <div class="w-24 h-1 bg-aksen-kuning mx-auto mb-12"></div>
-          <div class="max-w-4xl mx-auto bg-utama-biru rounded-lg shadow-lg overflow-hidden md:flex transform hover:-translate-y-2 transition-transform duration-300">
-            <div class="md:w-1/2">
-              <img src="https://i.postimg.cc/vTgRJ6Yp/website-portofolio.png" alt="Proyek Website Portofolio" class="h-64 w-full object-cover md:h-full" />
+        <!-- ===== HERO SECTION ===== -->
+        <section id="beranda" class="min-h-screen flex items-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 9, 87, 0.8), rgba(0, 9, 87, 1))">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-wider">Get To <span class="text-aksen-kuning text-glow">Know Me...</span></h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto" style="color: #cdcdcd">
+                    Selamat datang di portofolio saya!! &#128075;&#128075;&#128075;<br />
+                    Saya Rafsyah Fachri Isfansyah, seorang yang tertarik dalam dunia desain digital serta pengembangan aplikasi dan website <br />untuk menciptakan solusi yang fungsional.
+                </p>
+                <a href="#portofolio" class="mt-8 inline-block bg-aksen-kuning text-gelap-biru font-bold px-8 py-4 rounded-lg uppercase tracking-wider hover:scale-105 transform transition-transform duration-300"> Lihat Karya Saya </a>
             </div>
-            <div class="p-8 md:w-1/2 flex flex-col justify-center">
-              <h3 class="text-2xl font-bold text-white mb-2">Website Portofolio Personal</h3>
-              <p class="mb-4" style="color: #cdcdcd">Pengembangan website portofolio personal menggunakan Gemini AI berbasis HTML dan Tailwind CSS untuk mempelajari penggunaan AI dalam pembuatan website</p>
-              <div class="mt-4">
-                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Web Design</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold mr-2 px-2.5 py-1 rounded-full">HTML</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2.5 py-1 rounded-full">TailwindCSS</span>
-                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2.5 py-1 rounded-full">Gemini AI</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- ===== TENTANG SAYA SECTION (DIPERBARUI) ===== -->
-      <section id="tentang" class="bg-utama-biru">
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 items-center">
-            <!-- Kolom Gambar -->
-            <div class="h-64 md:h-full">
-              <img src="https://i.postimg.cc/rsz8PxTX/foto-Profil.png" alt="Foto profil Rafsyah Fachri Isfansyah" class="w-full h-full object-cover" />
-            </div>
-            <!-- Kolom Teks -->
-            <div class="p-8 md:p-12 lg:p-16 text-center md:text-left">
-              <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
-              <p class="mb-4" style="color: #cdcdcd">
-                Salam Kenal! Saya Rafsyah Fachri Isfansyah, <br />
-                seorang Mahasiswa S1 Sistem Informasi di Institut Teknologi Sepuluh Nopember. <br />
+        <!-- Garis Pemisah -->
+        <hr class="border-t border-utama-biru/30" />
+
+        <!-- ===== PORTOFOLIO SECTION ===== -->
+        <section id="portofolio" class="py-20 bg-gelap-biru">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Portofolio Karya Desain</h2>
+                <div class="w-24 h-1 bg-aksen-kuning mx-auto mb-12"></div>
+
+                <!-- Kategori: Aplikasi Mobile -->
+                <h3 class="text-2xl font-semibold text-terang-biru mb-8">Desain Aplikasi Mobile</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Proyek 1: Produk Jadi -->
+                    <a href="https://www.figma.com/proto/oeertPeZAUHAvsszrtBIuK/project-2-ar?page-id=0%3A1&node-id=1-1258&p=f&viewport=263%2C46%2C0.2&t=aoCAk6xrRC6vwHkY-1&scaling=scale-down&content-scaling=fixed" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
+                            <img src="https://i.postimg.cc/76HPSjQL/Ethno-Sync.png" alt="Ethno-Sync" class="rounded-md mb-4 w-full h-auto object-cover" />
+                            <h4 class="text-xl font-bold text-white">Prototipe Aplikasi Mobile | EthnoSync</h4>
+                            <p class="mt-2" style="color: #cdcdcd">EthnoSync merupakan aplikasi media yang dikhususkan untuk memperkenalkan budaya di Indonesia.</p>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Prototype</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4">Figma</span>
+                        </div>
+                    </a>
+                    <!-- Proyek 2: Rancangan 1 -->
+                    <a href="https://www.figma.com/proto/kXM7fgJBqi5OmkNNlRrYp5/Untitled?page-id=2%3A35&node-id=123-11564&viewport=578%2C-712%2C0.25&t=AdnjTJIKeriSWCrt-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=123%3A11564" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
+                            <img src="https://i.postimg.cc/XJsjLxTk/LeafMind.png" alt="LeafMind" class="rounded-md mb-4 w-full h-auto object-cover" />
+                            <h4 class="text-xl font-bold text-white">Rancangan Aplikasi Mobile | LeafMind</h4>
+                            <p class="mt-2" style="color: #cdcdcd">Konsep desain dan prototipe untuk ide aplikasi timer pomodoro bertema dedaunan dan merupakan Final Project mata kuliah Rekayasa Kebutuhan Perangkat Lunak</p>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Konsep</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4">Figma</span>
+                        </div>
+                    </a>
+                    <!-- Proyek 3: Rancangan 2 -->
+                    <a href="https://www.figma.com/proto/QJIZ45qsx1KROQ4BuFpK5C/PT-DT-K8?page-id=55%3A916&node-id=100-3502&viewport=642%2C294%2C0.25&t=qUUa0L6CvdG12OZG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=100%3A3502" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
+                            <img src="https://i.postimg.cc/W3Pz5Tsm/FPDesign-Thinking.png" alt="FP-Design-Thinking" class="rounded-md mb-4 w-full h-auto object-cover" />
+                            <h4 class="text-xl font-bold text-white">Rancangan Aplikasi Mobile | untitled</h4>
+                            <p class="mt-2" style="color: #cdcdcd">Konsep desain dan prototipe aplikasi untuk mencari project maupun tim lomba sesama mahasiswa.</p>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Konsep</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4">Figma</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Kategori: Desain Grafis -->
+                <h3 class="text-2xl font-semibold text-terang-biru mb-8">Desain Grafis Visual</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Proyek 4: Character Rig -->
+                    <a href="https://www.canva.com/design/DAGsYxF-eI0/rp6ERQSrYZis7KI1GYLaoQ/edit?utm_content=DAGsYxF-eI0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" class="block md:col-span-2">
+                        <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
+                            <img src="https://i.postimg.cc/GtNcwt3B/no-Fillrig2dbtr.png" alt="Desain karakter rig 2D" class="rounded-md mb-4 w-full h-auto object-cover" />
+                            <h4 class="text-xl font-bold text-white">Desain Karakter 2D | Anime: Bocchi The Rock</h4>
+                            <p class="mt-2" style="color: #cdcdcd">Pembuatan karakter 2D yang dapat digunakan sebagai model rigging animasi</p>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Ilustrasi</span>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Bocchi The Rock</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Canva</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Proyek 5: Character Rig -->
+                    <a target="_blank" rel="noopener noreferrer" class="block md:col-span-2">
+                        <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
+                            <img src="https://i.postimg.cc/909W6ZkK/Cover-Buku.png" alt="Cover Buku Kumpulan Cerpen" class="rounded-md mb-4 w-full h-auto object-cover" />
+                            <h4 class="text-xl font-bold text-white">Desain Cover Buku Kumpulan Cerpen | Pena Sorot</h4>
+                            <p class="mt-2" style="color: #cdcdcd">Digunakan sebagai cover buku dari ujian praktik mata pelajaran Agama Islam SMAN 4 Surabaya. Buku tersebut berisi kumpulan cerita pendek karya Kelompok 5 - XII MIPA 5</p>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Ilustrasi</span>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Book</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Canva</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Ibis Paint</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Kategori: Desain Media Sosial -->
+                <h3 class="text-2xl font-semibold text-terang-biru mb-8">Desain Media Sosial</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Proyek 5: Instagram Post 1 -->
+                    <a href="https://www.instagram.com/kolasemipa5?igsh=c3pncDM5a2E2ZWVy" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
+                            <img src="https://i.postimg.cc/vHgY7rX5/sample-Kolase-G.png" alt="Desain Grid kolasemipa5" class="rounded-md mb-4 w-full h-auto object-cover aspect-square" />
+                            <h4 class="text-xl font-bold text-white">Desain Feed Instagram | @kolasemipa5</h4>
+                            <p class="mt-2" style="color: #cdcdcd">Desain grid foto bersama Mipa 5 SMAN 4 Surabaya saat berkunjung ke Universitas Udayana</p>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Feed</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Instagram</span>
+                        </div>
+                    </a>
+                    <!-- Proyek 6: Instagram Post 2 -->
+                    <a href="https://drive.google.com/drive/folders/1AtcWpRNfgXKoug9eIkas57xRfyaGmDaI?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
+                            <img src="https://i.postimg.cc/YSfqGtRV/frame-Kolase.png" alt="Desain Postingan kolasemipa5" class="rounded-md mb-4 w-full h-auto object-cover aspect-square" />
+                            <h4 class="text-xl font-bold text-white">Desain Konten Instagram | @kolasemipa5</h4>
+                            <p class="mt-2" style="color: #cdcdcd">Digunakan sebagai cover dari konten-konten akun @kolasemipa5</p>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Post</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Instagram</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Kategori: Desain Media Sosial -->
                 <br />
-                Saat ini saya sedang mempelajari hal-hal terkait bisnis, desain, dan software development.
-              </p>
-              <p style="color: #cdcdcd">Saya tertarik mempelajari hal-hal baru dan berkolaborasi dalam proyek-proyek yang dapat mengembangkan kemampuan saya terutama dalam bidang media, website, dan software.</p>
+                <br />
+                <br />
+                <h3 class="text-2xl font-semibold text-terang-biru mb-8">Desain model 3D</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Proyek 5: Instagram Post 1 -->
+                    <a href="https://drive.google.com/file/d/1JiwBG7piN7Ecb2OncUx7zgMUUi55Ni1Q/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="bg-utama-biru p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group h-full">
+                            <img src="https://i.postimg.cc/XJbHBPdJ/LOGONYAITS.png" alt="Logo 3D ITS" class="rounded-md mb-4 w-full h-auto object-cover aspect-square" />
+                            <h4 class="text-xl font-bold text-white">Logo ITS 3D</h4>
+                            <p class="mt-2" style="color: #cdcdcd">Model Logo ITS 3D yang saya buat setelah mempelajari fitur dasar blender</p>
+                            <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Logo</span>
+                            <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2 py-1 rounded-full mt-4 ml-2">Blender</span>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- ===== KONTAK SECTION ===== -->
-      <section id="kontak" class="py-20">
-        <div class="container mx-auto px-6 text-center">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Feel Free to Contact Me</h2>
-          <div class="w-24 h-1 bg-aksen-kuning mx-auto mb-8"></div>
-          <p class="max-w-2xl mx-auto mb-8" style="color: #cdcdcd">Jika Anda memiliki proyek, ide, atau hanya ingin menyapa, jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk diskusi dan peluang baru.</p>
-          <a href="mailto:rafsyahfachri10@gmail.com" class="bg-aksen-kuning text-gelap-biru font-bold px-8 py-4 rounded-lg uppercase tracking-wider hover:scale-105 transform transition-transform duration-300"> Hubungi via Email </a>
-          <div class="flex justify-center space-x-6 mt-10">
-            <!-- GitHub -->
-            <a href="https://github.com/rfsyhmmm" target="_blank" rel="noopener noreferrer" class="text-terang-biru hover:text-aksen-kuning transition-colors duration-300">
-              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2C6.477 2 2 6.477 2 12.014c0 4.438 2.865 8.225 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.014C22 6.477 17.523 2 12 2z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/rafsyah-fachri-isfansyah" target="_blank" rel="noopener noreferrer" class="text-terang-biru hover:text-aksen-kuning transition-colors duration-300">
-              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
-                />
-              </svg>
-            </a>
-            <!-- WhatsApp -->
-            <a href="https://wa.me/+6281216547308" target="_blank" rel="noopener noreferrer" class="text-terang-biru hover:text-aksen-kuning transition-colors duration-300">
-              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zM12.04 20.15c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42s2.42 3.62 2.42 5.82c0 4.55-3.7 8.24-8.24 8.24zm4.52-6.14c-.25-.12-1.47-.72-1.7-.82s-.39-.12-.56.12c-.17.25-.64.82-.79.98s-.29.19-.55.06c-.25-.12-1.08-.39-2.05-1.26-.76-.68-1.26-1.52-1.41-1.78s-.02-.39.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.42c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.4-.42-.55-.42s-.29-.01-.45-.01c-.16 0-.42.06-.64.31s-.86.83-.86 2.02c0 1.19.88 2.34 1 2.5s1.73 2.63 4.18 3.72c.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1s1.42-.58 1.62-1.14.2-1.04.14-1.14c-.06-.11-.22-.17-.47-.29z"
-                />
-              </svg>
-            </a>
-            <!-- YouTube -->
-            <a href="https://www.youtube.com/@rfsyhmmm9060" target="_blank" rel="noopener noreferrer" class="text-terang-biru hover:text-aksen-kuning transition-colors duration-300">
-              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.26,4,12,4,12,4S5.74,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.74,2,12,2,12s0,4.26,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.74,20,12,20,12,20s6.26,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.26,22,12,22,12S22,7.74,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
+        <!-- ===== RECENT PROJECT SECTION (BARU) ===== -->
+        <section id="proyek-terbaru" class="py-20 bg-gelap-biru">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Proyek Terbaru</h2>
+                <div class="w-24 h-1 bg-aksen-kuning mx-auto mb-12"></div>
+                <a href="https://rfsyhmmm.github.io/PersonalPortofolio/" target="_blank" rel="noopener noreferrer" class="block max-w-4xl mx-auto">
+                    <div class="bg-utama-biru rounded-lg shadow-lg overflow-hidden md:flex transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="md:w-1/2">
+                            <img src="https://i.postimg.cc/vTgRJ6Yp/website-portofolio.png" alt="Proyek Website Portofolio" class="h-64 w-full object-cover md:h-full" />
+                        </div>
+                        <div class="p-8 md:w-1/2 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-white mb-2">Website Portofolio Personal</h3>
+                            <p class="mb-4" style="color: #cdcdcd">Pengembangan website portofolio personal menggunakan Gemini AI berbasis HTML dan Tailwind CSS untuk mempelajari penggunaan AI dalam pembuatan website</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-terang-biru text-white text-xs font-bold px-2 py-1 rounded-full mt-4">Web Design</span>
+                                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold mr-2 px-2.5 py-1 rounded-full">HTML</span>
+                                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2.5 py-1 rounded-full">TailwindCSS</span>
+                                <span class="inline-block bg-aksen-kuning text-gelap-biru text-xs font-bold px-2.5 py-1 rounded-full">Gemini AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== TENTANG SAYA SECTION (DIPERBARUI) ===== -->
+        <section id="tentang" class="bg-utama-biru">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+                    <!-- Kolom Gambar -->
+                    <div class="h-64 md:h-full">
+                        <img src="https://i.postimg.cc/rsz8PxTX/foto-Profil.png" alt="Foto profil Rafsyah Fachri Isfansyah" class="w-full h-full object-cover" />
+                    </div>
+                    <!-- Kolom Teks -->
+                    <div class="p-8 md:p-12 lg:p-16 text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                        <p class="mb-4" style="color: #cdcdcd">
+                            Salam Kenal! Saya Rafsyah Fachri Isfansyah, <br />
+                            seorang Mahasiswa S1 Sistem Informasi di Institut Teknologi Sepuluh Nopember. <br />
+                            <br />
+                            Saat ini saya sedang mempelajari hal-hal terkait bisnis, desain, dan software development.
+                        </p>
+                        <p style="color: #cdcdcd">Saya tertarik mempelajari hal-hal baru dan berkolaborasi dalam proyek-proyek yang dapat mengembangkan kemampuan saya terutama dalam bidang media, website, dan software.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== KONTAK SECTION ===== -->
+        <section id="kontak" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Feel Free to Contact Me</h2>
+                <div class="w-24 h-1 bg-aksen-kuning mx-auto mb-8"></div>
+                <p class="max-w-2xl mx-auto mb-8" style="color: #cdcdcd">Jika Anda memiliki proyek, ide, atau hanya ingin menyapa, jangan ragu untuk menghubungi saya. Saya selalu terbuka untuk diskusi dan peluang baru.</p>
+                <a href="mailto:rafsyahfachri10@gmail.com" class="bg-aksen-kuning text-gelap-biru font-bold px-8 py-4 rounded-lg uppercase tracking-wider hover:scale-105 transform transition-transform duration-300"> Hubungi via Email </a>
+                <div class="flex justify-center space-x-6 mt-10">
+                    <!-- GitHub -->
+                    <a href="https://github.com/rfsyhmmm" target="_blank" rel="noopener noreferrer" class="text-terang-biru hover:text-aksen-kuning transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.014c0 4.438 2.865 8.225 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.014C22 6.477 17.523 2 12 2z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/rafsyah-fachri-isfansyah" target="_blank" rel="noopener noreferrer" class="text-terang-biru hover:text-aksen-kuning transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+                        </svg>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/+6281216547308" target="_blank" rel="noopener noreferrer" class="text-terang-biru hover:text-aksen-kuning transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zM12.04 20.15c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42s2.42 3.62 2.42 5.82c0 4.55-3.7 8.24-8.24 8.24zm4.52-6.14c-.25-.12-1.47-.72-1.7-.82s-.39-.12-.56.12c-.17.25-.64.82-.79.98s-.29.19-.55.06c-.25-.12-1.08-.39-2.05-1.26-.76-.68-1.26-1.52-1.41-1.78s-.02-.39.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.42c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.4-.42-.55-.42s-.29-.01-.45-.01c-.16 0-.42.06-.64.31s-.86.83-.86 2.02c0 1.19.88 2.34 1 2.5s1.73 2.63 4.18 3.72c.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1s1.42-.58 1.62-1.14.2-1.04.14-1.14c-.06-.11-.22-.17-.47-.29z" />
+                        </svg>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@rfsyhmmm9060" target="_blank" rel="noopener noreferrer" class="text-terang-biru hover:text-aksen-kuning transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.26,4,12,4,12,4S5.74,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.74,2,12,2,12s0,4.26,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.74,20,12,20,12,20s6.26,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.26,22,12,22,12S22,7.74,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="bg-gelap-biru border-t border-utama-biru/30 py-6">
-      <div class="container mx-auto px-6 text-center text-terang-biru">
-        <p>&copy; <span id="year"></span> Rafsyah Fachri Isfansyah. Semua Hak Cipta Dilindungi.</p>
-      </div>
+        <div class="container mx-auto px-6 text-center text-terang-biru">
+            <p>&copy; <span id="year"></span> Rafsyah Fachri Isfansyah. Semua Hak Cipta Dilindungi.</p>
+        </div>
     </footer>
 
     <script>
-      // Script untuk toggle menu mobile
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-
-      // Script untuk menutup menu mobile setelah link di-klik
-      document.querySelectorAll("#mobile-menu a").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
+        // Script untuk toggle menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
-      });
 
-      // Script untuk smooth scroll (jika html class scroll-smooth tidak didukung)
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
+        // Script untuk menutup menu mobile setelah link di-klik
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
-      });
 
-      // Script untuk menampilkan tahun saat ini di footer
-      document.getElementById("year").textContent = new Date().getFullYear();
+        // Script untuk smooth scroll (jika html class scroll-smooth tidak didukung)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Script untuk menampilkan tahun saat ini di footer
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-  </body>
-</html>
+
+</body>
+</ht
